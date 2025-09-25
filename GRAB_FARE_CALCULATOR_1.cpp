@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip>  // for more precise decimal
+#include <iomanip>   // for setprecision
 using namespace std;
 
 int main() {
@@ -26,20 +26,21 @@ int main() {
             cout << "Invalid choice! Exiting program.\n"; 
             return 0;
     }
-    // format output to 2 decimal places only 
+
+    // format output to 2 decimal places
     cout << fixed << setprecision(2);
 
     cout << "\nDo you have a promo code? : ";
     cin >> promo;
     if (promo == "GRAB10" ) {
         fare = fare * 0.9; // 10% discount
-        cout << "Promo code applied! New fare: " << fare << endl;
+        cout << "Promo code applied! New fare: RM " << fare << endl;
     } else {
-        cout << "Invalid promo code or no discount applied. Fare: " << fare << endl;
+        cout << "Invalid promo code or no discount applied. Fare: RM " << fare << endl;
     }
 
     cout << "\nEstimated Fare: RM " << fare << endl;
     cout << "Thank you for using Grab Fare Calculator!" << endl;
 
-return 0;
+    return 0;
 }
