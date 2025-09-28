@@ -33,7 +33,7 @@ int main() {
     cin >> promo;
     if (promo == "OFFER10" ) {
         fare = fare * 0.9; // 10% discount
-        cout << "Promo code applied! New fare: " << fare << endl;
+        cout << "Promo code applied! New fare: RM " << fare << endl;
     } else {
         cout << "Invalid promo code or no discount applied. Fare: RM " << fare << endl;
     }
