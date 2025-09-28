@@ -35,7 +35,7 @@ int main() {
         fare = fare * 0.9; // 10% discount
         cout << "Promo code applied! New fare: " << fare << endl;
     } else {
-        cout << "Invalid promo code or no discount applied. Fare: " << fare << endl;
+        cout << "Invalid promo code or no discount applied. Fare: RM " << fare << endl;
     }
 
     cout << "\nEstimated Fare: RM " << fare << endl;
